@@ -1,16 +1,16 @@
 <!DOCTYPE html>
     <head>
-    <title>Simple Interest Calculator</title>
+    <title>Web App - Simple Interest Calculator</title>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <div class="maindiv">
         <h1>Simple Interest Calculator</h1>
-
+        <form class="mainform">
         Amount <input type="number" id="principal" min="0.01">  <br/>
         Rate <input type="range" id="rate" onchange="updateRate()"
-        min="minval" max="maxval" value="default_val"> 
+        min="1" max="20" value="default_val"> 
         <span id="rate_val">10.25%</span>
         <br/>
         No. of Years <select  id="years">
@@ -29,6 +29,7 @@
 
         <button onclick="compute()">Compute</button>
         <span id="result"></span>
+        </form>
         <footer>
         &#169; This Calculator belongs to Belligerent B
         </footer>
